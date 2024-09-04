@@ -61,4 +61,5 @@ function changeImage(image) {
 function updateNoButtonText() {
   noButton.innerHTML = generateMessage(noCount);
 }
+// add comment
 
