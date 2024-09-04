@@ -43,10 +43,10 @@ function resizeYesButton() {
 function generateMessage(noCount) {
   const messages = [
     "Không Bao Giờ",
-    "Anh bicc lỗi rồi ạa",
-    "Mong bé tha lỗi choo anhh :((",
+    "Anh bít lỗi rùi bé ạaa",
+    "Mong bé tha lỗi choo anhh nhaa :((",
     "Anhh saii rồi , anhh đáng trách ạ. Sau a sẽ không thế nứaaa",
-    "Bé đừng giận anhh nữa nhaaa",
+    "Bé đừng giận anhh nữa nhaaa, đi mòoo",
     "Anhhh iu bé nhắm nhắm nhắmmm",
   ];
 
@@ -55,26 +55,10 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-  catImg.src = `img/cat-${image}.jpg`;
+  catImg.src = `img/duong-${image}.jpg`;
 }
 
 function updateNoButtonText() {
   noButton.innerHTML = generateMessage(noCount);
-}
-
-noButton.addEventListener("mouseenter", moveButton);
-
-function moveButton() {
-  const buttonRect = noButton.getBoundingClientRect();
-  
-  // Tính toán vị trí mới ngẫu nhiên nhưng đảm bảo nút không ra khỏi khung hình
-  const maxLeft = window.innerWidth - buttonRect.width;
-  const maxTop = window.innerHeight - buttonRect.height;
-
-  const newLeft = Math.random() * maxLeft;
-  const newTop = Math.random() * maxTop;
-
-  noButton.style.left = `${newLeft}px`;
-  noButton.style.top = `${newTop}px`;
 }
 

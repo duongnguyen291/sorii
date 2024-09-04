@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #fff0f6;
+  background-color: #fdd9e5;
   font-family: "Protest Riot", sans-serif;
 }
 
@@ -64,8 +64,6 @@ body {
 
 .btn--no {
   background-color: #f03e3e;
-  position: absolute;
-  transition: transform 0.3s ease;
 }
 
 .hidden {
